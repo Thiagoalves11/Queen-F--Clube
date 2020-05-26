@@ -1,0 +1,157 @@
+body {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+}
+.inicio {
+    width: 100%;
+    background-color: black;
+    height: 120px;
+    border-bottom: 3px solid rgb(255, 46, 46);
+}
+
+main, .content {
+margin: 0 auto;
+width: 1050px;
+position: relative;
+}
+.logo {
+    float: left;
+    padding: 7px;
+    width: 50%;
+}
+.redes_sociais ul li {
+    margin-left: 22px;
+    display: inline-block;
+    list-style: none;
+    padding-top: 22%;
+}
+.redes_sociais {
+    float: right;
+}
+
+.header2 {
+    background-color: rgb(255, 231, 243);
+    width: 1400px;
+    margin: 0 auto;
+    border-bottom: 4px solid rgba(226, 226, 226, 0.897);
+    height: 100px;
+}
+.menu {
+    width: 80%;
+    float: left;
+}
+.menu ul li {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    margin-left: 15px;
+    height: 79px;
+}
+.menu ul li:hover {
+  border-bottom: 6px solid rgb(255, 49, 49);
+}
+.menu ul li a:hover {
+    color: rgb(255, 49, 49);
+}
+.menu ul li a {
+    color: rgb(36, 34, 34);
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.ss {
+    padding-top: 0%;
+}
+.col-100 {
+    width: 100%;
+    position: relative;
+}
+.col-1000 {
+    width: 100%;
+    position: absolute;
+}
+.slides {
+    width: 700px;
+}
+.text {
+    position: absolute;
+    text-align: left;
+    top: 96px;
+    width: 550px;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 13%;
+    font-size: 23px;
+}
+.texto-destaque {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.texto-destaque h1 {
+    padding-top: 47%;
+    color: rgb(146, 146, 146);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.card-missao {
+    background-image: url(../img/back3.png);
+    height: 400px;
+    padding: 50px;
+    padding-left: 170px;
+    padding-top: 55px;
+    border-top: 4px solid rgb(173, 173, 173);
+    border-bottom: 4px solid rgb(173, 173, 173);
+}
+.card-missao p {
+    font-size: 30px;
+    padding-left: 400px;
+    width: 700px;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-missao h3 {
+    font-size: 37px;
+    text-align: left;
+    margin-left: 400px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.missao {
+    padding-top: 50px;
+    float: left;
+    margin-left: 0px;
+}
+.visao {
+    float: right;
+    padding-top: 1px;
+    margin-right: 0;
+}
+.card-visao {
+    background-image: url(../img/back4.png.jpg);
+    height: 290px;
+    padding: 50px;
+    margin-top: 100px;
+    padding-right: 170px;
+    padding-top: 40px;
+    border-top: 4px solid rgb(173, 173, 173);
+    border-bottom: 4px solid rgb(173, 173, 173);
+}
+.col-23 {
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    width: 600px;
+    padding-left: 190px;
+}
+.valores {
+    float: left;
+}
+.card-valores {
+    b
+}
+
+
+
+
