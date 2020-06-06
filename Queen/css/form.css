@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+ }
+.corpo {
+    background-image: url(../img/obacklogo.png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-color: rgb(209, 92, 92);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.inicio {
+    width: 100%;
+    background-color: black;
+    height: 165px;
+    border-bottom: 3px solid rgb(220,20,60);
+    position: relative;
+}
+.logo {
+    margin-left: 43%;
+}
+.site-form {
+    top: 100px;
+    position: relative;
+    width: 100%;
+}
+.login {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+}
+.img-login {
+    border-radius: 15px;
+    position: absolute;
+    margin: 0;
+    margin-left: 700px;
+}
+.login-texto {
+    text-align: center;
+    margin-top: 225px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    margin-left: 800px;
+}
+.form h2 {
+    text-shadow: 0.2em 0.1em rgb(220,20,60);
+}
+.form {
+    display: flex;
+	flex-direction: column;
+}
+.inputs{
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: -10px;
+	border-radius: 50px;
+}
+.entrar {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	background: linear-gradient(to right, rgb(220,20,60), rgb(255, 170, 170));
+	cursor: pointer;
+}
+.cadastro {
+    height: 580px;
+    width: 400px;
+	background: linear-gradient(rgb(255, 255, 255), rgb(104, 8, 8));
+	border-radius: 15px;
+    position: absolute;
+    margin-left: 170px;
+	text-align: left;
+	padding-top: 20px;
+	color: #fff;
+	align-items: center;
+    line-height: 30px;
+}
+.cadastro-texto {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form2 {
+    margin-left: 90px;
+}
+.form2 h2 {
+     text-shadow: 0.2em 0.1em rgb(220,20,61);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(220,20,60);
+}
+.inputs2 {
+    width: 70%;
+	padding: 10px;
+    border: none;
+	border-radius: 50px;
+}
+.cad-img {
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 250px;
+}
+.cadastrobtn {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    font-size: 15px;
+	width: 65%;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	background: linear-gradient(to right, rgb(220,20,60), rgb(255, 170, 170));
+}

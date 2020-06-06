@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
-    background-color: rgb(255, 197, 197);
+    background-color: rgb(209, 92, 92);
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -184,6 +184,7 @@ position: relative;
     width: 25%;
     height: 6%;
     border: none;
+    padding-left: 70px;
 }
 .card-showmust {
     background-image: url(../img/backfinal.png);
@@ -201,7 +202,7 @@ position: relative;
     color: white;
     font-size: 25px;
     width: 725px;
-    padding-left: 480px;
+    padding-left: 465px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .stylefoot {
