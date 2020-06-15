@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Queen Oficial</title>
+    <link rel="stylesheet" type="text/css" href="./css/Sobre.css">
+    <link rel="shortcut icon" href="./img/letraq.png">
+
+</head>
+<body>
+    <div class="corpo"></div>
+    <header class="inicio">
+        <div class="home">
+                <ul>
+            <li>
+                <a href="./index.html">↺ HOME
+            </a>
+        </li>
+         </ul>
+        </div>
+         <div class="logo">
+             <img height="160px" src="./img/logo.png.png">
+         </div>
+         <div class="sobre-title">
+             <h2>Escolha Um Músico:</h2>
+            </div>
+         <br> <br> <br>
+    
+         <div class="info">
+        <div class="integrantes">
+         
+        <button class="fred" onclick="freddie()"><img class="fred2" width="145px" height="125px" src="img/freddie_about.png"><br><b>Freddie Mercury</b></button> <br>
+        <button class="brian" onclick="brian()"><img class="brian2" width="145px" height="125px" src="img/brian.png"><br><b>Brian May</b></button> <br>
+        </div>
+
+        <br>
+
+        <button class="deacon" onclick="deacon()"><img class="deacon2" width="145px" height="125px" src="img/deacon.png"><br><b>Jonh deacon</b></button> <br>
+        <button class="roger" onclick="roger()"><img class="roger2" width="145px" height="125px" src="img/roger.png"><br><b>Roger Taylor</b></button>
+         
+        <div class="mensagem" id="div_mensagem">
+              
+        </div>
+       <div class="show-space">
+        <img id="img_hotspace" src="./img/hot_space_capa.png">
+    </div> <br> 
+</div> 
+<div class="enfeite">
+    <h1>O Filme:</h1>
+<div class="movie">
+    <div class="movie-static">
+           <img height="488px" src="./img/bohemian-poster.png">
+    </div>
+    <div class="text-box">
+           <h2>Bohemian Rhapsody</h2>
+           <p>Traz a Cinebiografia da banda, contando sua trajetória musical, que se inicia em Londres e contagia o mundo. 
+             <br>Freddie Mercury, Brian May, Roger Taylor e John Deacon formam a banda de rock Queen em 1970. 
+              <br>Quando o estilo de vida agitado de Mercury começa a sair de controle, o grupo precisa encontrar 
+               uma forma de lidar com o sucesso e os excessos de Freddie.
+               <br>É notável a fidelidade desta obra a real história da banda, passando por momentos marcantes do grupo,
+               foi recompensada com 4 Oscars e 1 indicação.
+            </p>
+    </div>
+</div>
+</div>
+<div class="stylefoot">
+        <div class="imgsfoot">
+        <div class="imgrodape">
+           <img width="300px" src="./img/logorodape.png">
+        </div>
+        <p class="foottitle">Powered by</p>
+        <div class="imgbrodape">
+          <img width="300px" src="./img/bandtec_logo.png">
+        </div>
+        </div>
+        <div class="cop"><p>© 2020 Copyright - Queen Fã inc</p></div>
+        <div class="menufoot">
+            <h3 style="color: white"><b>Menu</b></h3>
+            <ul>
+                <li><a href="./index.html"><p style="color: white">Home</p></a></li>
+                <li><a href=""><p style="color: white">Sobre</p></a></li>
+                <li><a href=""><p style="color: white">Status</p></a></li>
+                <li><a href="./index2.html"><p style="color: white">Torne-se Membro</p></a></li>
+              </ul>
+        </div>
+        <div class="suporte">
+            <h3 style="color: white"><b>Suporte</b></h3>
+            <p style="color: white">Chat</p>
+            <p style="color: white">FAQ</p>
+            <p style="color: white">(+55) 11 96541-1173</p>
+        </div>
+        <div class="contats">
+            <h3 style="color: white">Contatos</h3>
+            <div class="redes_2">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCW5vUtmLjgaW2PmzYMzlyuA?view_as=subscriber"><img height="30px" width="32px" src="./img/youtube.png"></a></li>
+                    <li><a href="https://pt-br.facebook.com/Queen/"><img height="30px" width="32px" src="./img/face.png"></a></li>
+                    <li><a href="https://www.instagram.com/officialqueenmusic/?hl=pt-br"><img height="30px" width="32px" src="./img/insta.png"></a></li>
+                </ul>
+         </div>
+        </div>
+    </div>
+</header>
+<div class="style">
+      <div class="slides">
+           <img height="560px" src="img/bohemian-slide.png">
+            <img height="560px" src="img/rhapsody-slide.png">
+      </div>
+</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/action.js"></script>
+
+</body>
+</html>       
+ <script>
+   function freddie() {
+    img_hotspace.src = `./img/fredhot.png`   
+    div_mensagem.innerHTML = `<b>• Freddie Mercury, nome artístico de Farrokh Bulsara , foi um cantor, 
+        pianista e compositor. <br><br>• Conhecido por seu trabalho com a banda britânica de rock Queen, 
+        que ele integrou de 1970 até o ano de sua morte.<br><br>• Mercury tornou-se célebre pelo seu poderoso tom de 
+        voz e seus desempenhos energéticos que sempre envolviam a platéia, tendo sido considerado pela crítica 
+        como um dos maiores artistas de todos os tempos.</b>`;
+   }
+   function brian() {
+    img_hotspace.src = `./img/brianhot.png`
+    div_mensagem.innerHTML = `<b>• Brian Harold May, é um músico inglês e também astrofísico, 
+        mais conhecido por ser o guitarrista e compositor da banda britânica de rock Queen. 
+         construiu uma guitarra elétrica conhecida como Red Special. 
+         <br><br>• Algumas de suas composições para o grupo são "We Will Rock You", "Tie Your Mother Down", 
+         "The Show Must Go On" "I Want It All", "Who Wants to Live Forever" e "Hammer To Fall".
+         <br> <br>• May é co-fundador do Queen, juntamente com o cantor Freddie Mercury e o baterista Roger Taylor, 
+         tendo trabalhado anteriormente com Taylor na banda Smile.</b>`;
+   }
+   function deacon() {
+    img_hotspace.src = `./img/deaconhot.png`
+    div_mensagem.innerHTML = `<b>• John Richard Deacon é um músico britânico aposentado, 
+        mais conhecido por ter sido o baixista e um dos compositores da banda de rock Queen.
+         <br><br>• Foi o último dos quatro membros a entrar para o grupo em 1971 e também o mais jovem, 
+         <br><br>• Deacon é o autor de um grande número de sucessos do Queen, 
+         incluindo os singles "You're My Best Friend", "Spread Your Wings", "Back Chat", "I Want to Break Free" 
+         e o maior sucesso de todos, o single mais vendido da banda nos Estados Unidos, "Another One Bites the Dust".</b>`;
+   }
+   function roger() {
+    img_hotspace.src = `./img/taylorhot.png`
+    div_mensagem.innerHTML = `<b>• Roger Meddows-Taylor, mais conhecido como Roger Taylor, é um músico, multi-instrumentista e backing vocal britânico.
+           <br><br>• É considerado um dos melhores e mais influentes bateristas de rock
+         da década de 1970 e 80.<br><br>• Como compositor, Taylor contribuiu com músicas de álbuns da banda,
+         começando a compor pelo menos uma faixa em cada álbum, geralmente cantou os vocais em suas próprias 
+         composições.</b>`;
+   }
+</script>

@@ -1,0 +1,88 @@
+PARte dos SLIDES:
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+ <div class="col-1000">
+        <div class="slides">
+            <img height="620px" src="./img/slidebanda1.png">
+            <img height="620px" src="./img/slidebanda2.png">
+            <img height="620px" src="./img/slidebanda3.png">
+            
+          </div>
+    </div>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>"></script>
+    <script type="text/javascript" src="./js/ata.js"></script>"></script>
+
+
+$('.slides').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplayspeed: 2000
+ });
+
+ 
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  width: 22px;
+  height: 39px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url('../img/aty.png.png');
+  top: 42%;
+  left: 5%;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 22px;
+    height: 39px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/at.png');
+    top: 42%;
+    right: 5%;
+}
+.col-1000 {
+    width: 100%;
+    position: absolute;
+}
+.slick-list {
+    width: 100%!important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+.slick-dots li button {
+    font-size: 0px;
+    border: 4px solid white;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 40%;
+    position: absolute;
+    left: 44%;
+    top: 92%;
+}
+li.slick-active button {
+    background-color: red;
+}
+.slick-dots li {
+    padding-left: 8px;
+    display: inline-block;
+}
