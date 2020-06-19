@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Membro | Queen Oficial</title>
+    <link rel="stylesheet" type="text/css" href="./css/form.css">
+    <link rel="shortcut icon" href="./img/letraq.png">
+</head>
+
+<body>
+    <div class="corpo"></div>
+
+    <div class="tit-front">
+        <h1>Cadastre-se <span>ou</span> Faça Login</h1>
+    </div>
+
+    <header class="inicio">
+        <div class="home">
+            <ul>
+                <li> <a href="./index.html">◄ HOME</a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img height="160px" src="./img/logo.png.png">
+        </div>
+    </header>
+
+    <div class="site-form">
+        <div class="login">
+            <img class="img-login" height="600px" src="./img/img-login.png.jpg">
+            <div class="login-texto">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <h2>Já é um Membro?<br>
+                        Faça seu Login!</h2>
+                    <b>E-mail:</b><input type="email" name="login" placeholder="E-mail" class="inputs"> <br>
+                    <b>Senha:</b><input type="password" name="senha" placeholder="Senha" class="inputs"> <br>
+                    <button id="btn_entrar" class="entrar"> <b>Entrar</b></button>
+                </form>
+            </div>
+        </div>
+        <div class="cadastro">
+            <div class="cadastro-texto">
+                <form onsubmit="enviar()" class="form2">
+                    <h2>Cadastre-se</h2>
+                    <b>Nome de usuário:</b><br><input id="nome" placeholder="Nome de usuário" class="inputs2"> <br>
+                    <b>E-mail:</b><br><input type="email" placeholder="E-mail" class="inputs2"> <br>
+                    <b>Número (Cel):</b><br><input placeholder="(xx) xx-xxxxx-xxxx" class="inputs2"> <br>
+                    <b>Senha:</b><br><input type="password" placeholder="Senha" class="inputs2"> <br>
+                    <b>Confirmar Senha:</b><br><input type="password" placeholder="Confirmar Senha" class="inputs2">
+                    <br>
+                    <button type="submit" class="cadastrobtn">Cadastrar-se</button>
+                </form>
+            </div>
+        </div>
+        <div class="stylefoot">
+            <div class="imgsfoot">
+                <div class="imgrodape">
+                    <img width="300px" src="./img/logorodape.png">
+                </div>
+                <p class="foottitle">Powered by</p>
+                <div class="imgbrodape">
+                    <img width="300px" src="./img/bandtec_logo.png">
+                </div>
+            </div>
+            <div class="cop">
+                <p>© 2020 Copyright - Queen Fã inc</p>
+            </div>
+            <div class="menufoot">
+                <h3 style="color: white"><b>Menu</b></h3>
+                <ul>
+                    <li><a href="./index.html">
+                            <p style="color: white">Home</p>
+                        </a></li>
+                    <li><a href="./index3.html">
+                            <p style="color: white">Sobre</p>
+                        </a></li>
+                    <li><a href="./index2.html">
+                            <p style="color: white">Torne-se Membro</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="suporte">
+                <h3 style="color: white"><b>Suporte</b></h3>
+                <p style="color: white">Chat</p>
+                <p style="color: white">FAQ</p>
+                <p style="color: white">(+55) 11 96541-1173</p>
+            </div>
+            <div class="contats">
+                <h3 style="color: white">Contatos</h3>
+                <div class="redes_2">
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCW5vUtmLjgaW2PmzYMzlyuA?view_as=subscriber"><img
+                                    height="30px" width="32px" src="./img/youtube.png"></a></li>
+                        <li><a href="https://pt-br.facebook.com/Queen/"><img height="30px" width="32px"
+                                    src="./img/face.png"></a></li>
+                        <li><a href="https://www.instagram.com/officialqueenmusic/?hl=pt-br"><img height="30px"
+                                    width="32px" src="./img/insta.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    function entrar() {       
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.email_usuario;
+                    sessionStorage.nome_usuario_meuapp = json.nome_usuario;
+                    
+                    window.location.href = 'i5login.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>
