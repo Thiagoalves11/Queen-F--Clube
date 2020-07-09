@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Prova C3 - Guilherme Alcarde</h2>
+
+    Digite nome do país: <input type="text" id="pais" autofocus> <br>
+    Digite a população do país: <input id="populacao"> <br>
+    Digite o grau de liberdade econômica: <input id="liberdade"> <br>
+    
+    <button onclick="cadastrar()">Cadastrar País</button> <br>
+    <br> <br>
+
+    <button onclick="analisar()">Analisar</button> <br> <br>
+
+    <div id="div_ver"></div>
+    
+
+</body>
+</html>
+<script>
+    
+var paises = [];
+var populacoes = [];
+var liberdades = [];
+var cat_liberdades = [];
+var idhs = [];
+var desempregos = [];
+var valor_desempregos = [];
+var imagens = [];
+
+
+function cadastrar() {
+
+    if(populacao.value < 1000 || liberdade.value >100 || liberdade.value < 0) {
+        alert(`Entradas inválidas!`)
+    } else{
+        paises.push(pais.value);
+
+        if(liberdade.value <= 50){
+            cat_liberdades.push('Reprimido');
+            idhs.push(0.50);
+            desempregos.push(20);
+            valor_desempregos.push(0.2);
+            imagens.push('reprimido.jpg');
+        } else if(liberdade.value > 80) {
+            cat_liberdades.push('Livre');
+            idhs.push(0.85);
+            desempregos.push(5);
+            valor_desempregos.push(0.05);
+            imagens.push('livre.jpg');
+        } else if(liberdade.value <= 60) {
+            cat_liberdades.push('Quase reprimido');
+            idhs.push(0.65);
+            desempregos.push(15);
+            valor_desempregos.push(0.15);
+            imagens.push('quasereprimido.jpg');
+        } else if(liberdade.value > 70) {
+            cat_liberdades.push('Quase Livre');
+            idhs.push(0.77);
+            desempregos.push(7);
+            valor_desempregos.push(0.07);
+            imagens.push('quaselivre.jpg');
+        }  else {
+            cat_liberdades.push('Moderadamente livre');
+            idhs.push(0.72);
+            desempregos.push(10);
+            valor_desempregos.push(0.1);
+            imagens.push('moderadamentelivre.jpg');
+        }
+
+
+        populacoes.push(populacao.value);
+        liberdades.push(liberdade.value);
+    }
+
+
+    
+
+}
+
+    function analisar() {
+        div_ver.innerHTML = '';
+
+        for(indice = 0; indice < paises.length ; indice++){
+            div_ver.innerHTML += `País ${indice+1}: <b> ${paises[indice]} </b> <br>
+            Categoria: <b>${cat_liberdades[indice]}</b> <br>
+            Habitantes: <b> ${populacoes[indice]} </b> <br>
+            IDH médio provável: <b> ${idhs[indice]} </b> <br>
+            Desemprego médio provável: <b> ${desempregos[indice]}% </b>, ou seja, talvez <b> ${parseInt((populacoes[indice]) * (valor_desempregos[indice]))}</b> estejam sem emprego <br>
+            <img src="${imagens[indice]} " alt="" width="200px" height="200px"> <br> <br>`;
+        }
+    }
+
+
+</script>
